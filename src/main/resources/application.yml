@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    url: "jdbc:h2:file:./src/main/resources/db/transaction;MODE=PostgreSQL;ACCESS_MODE_DATA=r;IFEXISTS=TRUE"
+    username:
+    password:
+    driver-class-name: org.h2.Driver
+
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+
+server:
+  port: 8080
